@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explicação Interativa do Jogo Clash Royale</title>
+
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f0f0f0; }
+        h1, h2 { color: #ff0000; }
+        .section { margin-bottom: 20px; padding: 10px; border: 1px solid #00f2ff; background-color: rgb(255, 255, 255); }
+        .hidden { display: none; }
+        ul, ol {
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+        button { background-color: #ff0000; color: rgb(255, 255, 255); border: none; padding: 10px; cursor: pointer; margin: 5px; }
+        button:hover { background-color: #00ddff; }
+        #quiz-result { margin-top: 10px; font-weight: bold; }
+        #card-draw { margin-top: 10px; font-size: 18px; }
+    </style>
+
+</head>
+<body>
+    <h1>Explicação Interativa do Jogo Clash Royale</h1>
+    <p>Explore as mecânicas do jogo! Clique nos botões para expandir seções, responder ao quiz ou sortear uma carta.</p>
+
+    <div class="section">
+        <h2>O Que é Clash Royale?</h2>
+        <p>Clash Royale é um jogo de estratégia em tempo real da Supercell. Dois jogadores batalham para destruir torres e ganhar coroas.</p>
+        <button onclick="toggleSection('details1')">Mostrar Mais Detalhes</button>
+        <div id="details1" class="hidden">
+            <p>Lançado em 2016, combina cartas com batalhas rápidas. É gratuito, mas com compras opcionais.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Como Funciona o Jogo</h2>
+        <ul>
+            <li><strong>Objetivo:</strong> Ganhar coroas.</li>
+            <li><strong>Baralho:</strong> 8 cartas de centenas disponíveis.</li>
+            <li><strong>Elixir:</strong> Recurso para jogar cartas, regenera até 10.</li>
+        </ul>
+        <button onclick="toggleSection('details2')">Mostrar Mais Detalhes</button>
+        <div id="details2" class="hidden">
+            <p>O mapa tem duas pistas mas conhecido como pontes. Estratégia envolve posicionamento e combos em tempo real.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Quiz Rápido: Teste Seu Conhecimento!</h2>
+        <p>Qual é o objetivo principal do jogo?</p>
+        <button onclick="checkAnswer('destruir torres')">Destruir as torres inimigas</button>
+        <button onclick="checkAnswer('coletar dinheiro e upar suas cartas')">Coletar dinheiro e upar suas cartas</button>
+        <button onclick="checkAnswer('construir baralhos')">Construir baralhos</button>
+        <div id="quiz-result"></div>
+    </div>
+
+    <div class="section">
+        <h2>Simulação: Sorteie uma Carta</h2>
+        <p>Clique para sortear uma carta aleatória do baralho (simulando o jogo).</p>
+        <button onclick="drawCard()">Sortear Carta</button>
+        <div id="card-draw"></div>
+    </div>
+    
+    <div class="section">
+        <h1>Perguntas:</h1>
+        <p>Sobre Clash Royale</p>
+    <ul>
+        <li>Quais as Cores que o Clah Royale e conhecido?</li>
+        <li>Você conhece alguma carta de clash royale</li>
+        <li>Se você pudesse criar uma carta nova para o jogo, que poder ela teria?</li>
+        <li>Qual amigo Você acha que venceria  num jogo de estratégia como esse?</li>
+    </ul>
+
+    <button onclick="toggleSection('curiosidades')">Mostrar Curiosidades</button>
+    <div id="curiosidades" class="hidden">
+        <p>Esse jogo vai tirar sua paz que talvez você não tenha. SAIA, CORRA, FUGA, NÃO ENTRE 😅</p>
+    </div>
+</div>
+
+
+    <script>
+        function toggleSection(id) {
+            const element = document.getElementById(id);
+            element.classList.toggle('hidden');
+        }
+  
+
+        function checkAnswer(answer) {
+            const result = document.getElementById('quiz-result');
+            if (answer === 'destruir torres') {
+                result.textContent = 'Correto! O objetivo é destruir as torres do oponente.';
+                result.style.color = 'green';
+            } else {
+                result.textContent = 'Errado! Tente novamente.';
+                result.style.color = 'red';
+            }
+        }
+
+        function drawCard() {
+            const cards = [
+            'Cavaleiro (Custo: 3, Dano: 167)',
+            'Arqueiras (Custo: 3, Dano: 122)',
+            'Gigante (Custo: 5, Dano: 318)',
+            'Mini P.E.K.K.A (Custo: 4, Dano: 698)',
+            'Mosqueteira (Custo: 4, Dano: 218)',
+            'Valquíria (Custo: 4, Dano: 246)',
+            'Príncipe (Custo: 5, Dano: 346)',
+            'Bárbaros (Custo: 5, Dano: 180)',
+            'Mega Servo (Custo: 3, Dano: 255)',
+            'Dragão Bebê (Custo: 4, Dano: 135)',
+            'Mago (Custo: 5, Dano: 240)',
+            'Lenhador (Custo: 4, Dano: 290)',
+            'P.E.K.K.A (Custo: 7, Dano: 696)',
+            'Golem (Custo: 8, Dano: 259)',
+            'Balão (Custo: 5, Dano: 798)',
+            'Mineiro (Custo: 3, Dano: 176)',
+            'Bandida (Custo: 3, Dano: 160)',
+            'Zap (Custo: 2, Dano: 159)',
+            'Flechas (Custo: 3, Dano: 189)',
+            'Bola de Fogo (Custo: 4, Dano: 572)',
+            'Relâmpago (Custo: 6, Dano: 1056)',
+            'Veneno (Custo: 4, Dano: 720)',
+            'Canhão (Custo: 3, Dano: 179)',
+            'Torre Inferno (Custo: 5, Dano: 900)',
+            'Tesla (Custo: 4, Dano: 186)',
+            'Torre Bombardeira (Custo: 4, Dano: 216)'
+            ];
+            const randomCard = cards[Math.floor(Math.random() * cards.length)];
+            document.getElementById('card-draw').textContent = `Você sorteou: ${randomCard}`;
+        }
+    </script>
+</body>
+</html>
