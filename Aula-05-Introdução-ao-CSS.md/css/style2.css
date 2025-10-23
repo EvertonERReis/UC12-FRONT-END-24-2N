@@ -1,0 +1,30 @@
+h1 {
+    text-align: center;
+    color: rgb(0, 136, 255);
+}
+
+p {
+    color: rgb(87, 89, 90);
+    font-size: large, 18px;
+    text-align: center;
+}
+button {
+    background-color: rgb(255, 0, 0);
+    color: aliceblue;
+    border: none;
+    border-radius: 50px; /* deixa o botão bem arredondado */
+    padding: 12px 25px; /* espaço interno */
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: rgb(200, 0, 0); /* muda de cor ao passar o mouse */
+    transform: scale(1.05); /* dá um pequeno zoom */
+  }
+
+#texto { 
+    color: blue; 
+}

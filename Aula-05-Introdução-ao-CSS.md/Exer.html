@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style2.css">
+    <title>1️⃣ Mini Desafio 💪</title>
+</head>
+<body>
+    
+    <h1>Titulo do Bolsonaro Gauchão</h1>
+    <p>esse site vai falar sobre o Gauchão do Bolsonaro</p>
+
+    <p id="texto" style="color: red;">Teste</p>
+    
+<center>
+    <button onclick="checkAnswer('Ele é Gauchão')">Bolsonaro Gaucho</button>
+    <button onclick="checkAnswer('Ele é um Anão')">Bolsonaro um Anão</button>
+    <button onclick="checkAnswer('Ele é uma Baleia')">Bolsonaro uma Baleia</button>
+    <div id="quiz-result"></div>
+</center> 
+
+<script>
+    function checkAnswer(answer) {
+        const result = document.getElementById('quiz-result');
+        if (answer === 'Ele é Gauchão') {
+            result.textContent = 'Correto! Ele é Gauchão.';
+            result.style.color = 'green';
+        } else {
+            result.textContent = 'Errado! Tente novamente.';
+            result.style.color = 'red';
+        }
+    }
+</script>
+
+</body>
+</html>
