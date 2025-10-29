@@ -1,0 +1,31 @@
+.caixa {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    padding: 20px;
+    border: 5px solid rgb(138, 138, 232);
+    margin: 15px;
+  }
+
+  div {
+    display: block;
+  }
+
+  span {
+    display: inline;
+  }
+
+  button {
+    display: inline-block;
+    padding: 10px 20px;
+  }
+
+  .exemplo1 {
+    background-color: coral;
+    margin: 20px;
+  }
+  
+  .exemplo2 {
+    background-color: lightgreen;
+    padding: 20px;
+  }
