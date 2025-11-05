@@ -1,0 +1,11 @@
+You win! Thanks to your mastery of flexbox, you were able to help all of the frogs to their lilypads. Just look how hoppy they are!
+
+If you found this ribbeting, be sure to visit Grid Garden to learn about another powerful new feature of CSS layout. You can also find other coding games over at Codepip. And be sure to share Flexbox Froggy with your friends!
+
+
+Tradução
+
+Você venceu! Graças ao seu domínio do flexbox, você conseguiu ajudar todos os sapos a chegarem aos seus nenúfares. Veja como eles estão felizes!
+
+Se você achou isso interessante, não deixe de visitar o Grid Garden para aprender sobre outro novo recurso poderoso do layout CSS. Você também pode encontrar outros jogos de programação no Codepip. E não se esqueça de compartilhar o Flexbox Froggy com seus amigos!
+
