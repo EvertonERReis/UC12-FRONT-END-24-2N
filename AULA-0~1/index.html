@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- ===== ÁREA DIREITA: botão instalar + login + idioma ===== -->
+  <div class="area-direita">
+    <button class="botao-instalar">Instale o Steam</button>
+    <span class="texto-login">Iniciar sessão | idioma</span>
+  </div>
+
+  <!-- ===== CABEÇALHO ===== -->
+  <header>
+    <div class="navegacao-superior">
+      
+      <!-- Logo + Menu principal -->
+      <div class="logo-menu">
+        <div class="logo">
+          <img src="https://store.cloudflare.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016" alt="Steam Logo">
+        </div>
+
+        <nav class="menu-principal">
+          <a href="#" class="link-topo">LOJA</a>
+          <a href="#" class="link-topo">COMUNIDADE</a>
+          <a href="#" class="link-topo">SOBRE</a>
+          <a href="#" class="link-topo">SUPORTE</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== MENU SECUNDÁRIO ===== -->
+  <nav class="menu-secundario">
+    <a href="#">Explorar</a>
+    <a href="#">Recomendações</a>
+    <a href="#">Categorias</a>
+    <a href="#">Maneiras de Jogar</a>
+    <a href="#">Secções especiais</a>
+
+    <!-- Campo de busca com lupa igual à do professor -->
+    <form class="caixa-pesquisa">
+      <input type="search" placeholder="Procurar na loja" aria-label="Procurar na loja">
+      <input type="submit" value="🔍" aria-label="Pesquisar">
+    </form>
+  </nav>
+
+  <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+  <main>
+      <section class="destaques">
+          <h4>RECOMENDADOS E EM DESTAQUE</h4>
+
+          <div class="cartao-destaque">
+              <div class="imagem-principal">
+                  <img src="img/csGo.jpg" alt="Counter-Strike">
+
+                  <div class="info-jogo">
+                      <h3>Counter-Strike</h3>
+                      <p>Já disponível • Popular • Gratuito para jogar</p>
+                  </div>
+              </div>
+
+              <div class="galeria-imagens">
+                <h2>Counter-Strike 2</h2>
+                <img src="img/arma.jpg" alt="Imagem 1 do jogo">
+                <img src="img/Cenario.jpg" alt="Imagem 2 do jogo">
+                <img src="img/tresCaras.jpg" alt="Imagem 3 do jogo">
+                <img src="img/cincoCaras.jpg" alt="Imagem 4 do jogo">
+                <div id="rodape-galeria">
+                  <h4>Já Disponivel</h4>
+                  <span>testando</span>
+                </div>
+              </div>
+          </div>
+      </section>
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,235 @@
+/* ===== CONFIGURAÇÕES GERAIS ===== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1b324f;
+  color: #c7d5e0;
+}
+
+a {
+  
+  color: #c7d5e0;
+}
+
+/* ===== ÁREA DIREITA (TOPO) ===== */
+.area-direita {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #171a21;
+  padding: 5px 20px;
+  gap: 10px;
+}
+
+.botao-instalar {
+  background-color: #5c7e10;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.botao-instalar:hover {
+  background-color: #7fb21e;
+}
+
+.texto-login {
+  font-size: 12px;
+  color: #c7d5e0;
+}
+
+/* ===== CABEÇALHO ===== */
+header {
+  background-color: #171a21;
+  padding: 10px 70px;
+}
+
+.navegacao-superior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo + menu principal lado a lado */
+.logo-menu {
+  display: flex;
+  align-items: center;
+  gap: 40px; /* espaço entre logo e menu */
+}
+
+.logo img {
+  height: 50px;
+}
+
+/* ===== MENU PRINCIPAL ===== */
+.menu-principal {
+  display: flex;
+  gap: 25px;
+}
+
+.link-topo:hover {
+  color: #66c0f4;
+}
+
+/* ===== MENU SECUNDÁRIO ===== */
+.menu-secundario {
+  background-color: #082036;
+  padding: 8px 70px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.menu-secundario a {
+  color: #c7d5e0;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.menu-secundario a:hover {
+  color: #66c0f4;
+}
+
+/* ===== LUPA / CAMPO DE PESQUISA ===== */
+.caixa-pesquisa {
+  display: flex;
+  background-color: #2f3c47;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  padding: 2px;
+  align-items: center;
+  margin-left: auto; /* deixa a busca no lado direito */
+}
+
+.caixa-pesquisa input[type="search"] {
+  background: none;
+  border: none;
+  color: #50b2fc;
+  padding: 4px 6px;
+  width: 490px;
+  font-size: 14px;
+}
+
+.caixa-pesquisa input[type="search"]::placeholder {
+  color: #ffffff;
+  font-style: italic;
+}
+
+.caixa-pesquisa input[type="submit"] {
+  background-color: #3aa0f9;
+  border: none;
+  border-radius: 0 2px 2px 0;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  width: 35px;
+  height: 28px;
+  transition: background-color 0.3s;
+}
+
+.caixa-pesquisa input[type="submit"]:hover {
+  background-color: #66c0f4;
+}
+
+/* ===== SEÇÃO DE DESTAQUES ===== */
+main {
+  padding: 40px;
+}
+
+.destaques h4 {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.cartao-destaque {
+  display: flex;
+  gap: 20px;
+  background-color: #16202d;
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+/* ===== IMAGEM PRINCIPAL ===== */
+.imagem-principal {
+  position: relative;
+  flex: 6;
+}
+
+.imagem-principal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info-jogo {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+}
+
+.info-jogo h3 {
+  margin: 0;
+  color: #fff;
+  font-size: 18px;
+}
+
+.info-jogo p {
+  margin: 5px 0 0;
+  font-size: 13px;
+  color: #c7d5e0;
+}
+
+/* ===== GALERIA ===== */
+.galeria-imagens {
+  flex: 3;
+  display: flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.galeria-imagens h2{
+  margin-right: 310px;
+}
+
+.galeria-imagens img {
+  width: 45%;
+  height: 35%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.galeria-imagens img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 800px) {
+  .cartao-destaque {
+    flex-direction: column;
+  }
+
+  .navegacao-superior {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu-principal {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .caixa-pesquisa {
+    max-width: 100%;
+  }
+
+  .menu-secundario {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
