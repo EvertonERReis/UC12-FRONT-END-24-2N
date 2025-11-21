@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧠 Exercícios - Parte 2: Eventos em JavaScript</title>
+    <link rel="stylesheet" href="./css/style2.css">
+</head>
+<body> 
+    
+    <!-- 🔁 Ex. 3 – Alternar Visibilidade de um Elemento -->
+
+    <div class="section">
+        <h2>Você é legal ?</h2>
+        <button onclick="toggleSection('details1')">Mostrar Mais Detalhes</button>
+        <div id="details1" class="hidden">
+            <p>Não.</p>
+        </div>
+    </div>
+    
+    <input id="campoTexto" type="text" placeholder="Digite algo...">
+
+    <p id="resultado"></p>
+
+  <script>
+
+        function toggleSection(id) {
+            const element = document.getElementById(id);
+            element.classList.toggle('hidden');
+        }
+  
+  
+// 🎨 Ex. 4 – Mudança de Cor com Mouse 
+
+<div id="caixa"></div>
+
+
+    const caixa = document.getElementById("caixa");
+
+    caixa.addEventListener("mouseover", function() {
+        caixa.style.backgroundColor = "blue";
+    });
+
+    caixa.addEventListener("mouseout", function() {
+        caixa.style.backgroundColor = "gray";
+    });
+
+  
+ // 🔡 Ex. 5 – Mostrar Texto ao Pressionar a Tecla
+
+
+    const campo = document.getElementById("campoTexto");
+    const resultado = document.getElementById("resultado");
+
+    campo.addEventListener("keyup", function() {
+        resultado.textContent = campo.value;
+    });
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+.hidden {
+    display: none;
+}
+
+#caixa {
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+    margin-bottom: 20px;
+}
