@@ -1,0 +1,89 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background: #ffcffd;
+    padding: 20px;
+}
+
+h1 {
+    color: #dd00ff;
+    margin-bottom: 5px;
+
+
+}
+
+/* classe para textos pequenos */
+.small {
+    font-size: 12px;
+    color: black;
+
+}
+
+/* Estilização para botão */
+button {
+    background: #ea00ff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s;  /* tempo de transição para efeitos ( para ficar suave) */
+
+}
+
+button:houver {
+    background: #d900e4;
+    transform: scale(1.05); /* aumenta levemente o tamanho do botão | efeito de zoom */
+
+}
+
+/* Estilo do card principal (a caixinha para aparecer o pet) */
+.card {
+    background: white;
+    border-radius: 20px;
+    width: 350px;
+    margin: 20px auto;
+    padding: 20px;
+    font-size: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    animation: fade 0.4s ease-in-out; /* animação "fade" quando o card aparece */
+    
+}
+
+/* estilo para as immagens dentro de um card */
+.card img {
+    width: 100%;
+    border-radius: 15px;
+
+}
+
+/* galeria de favoritos */
+.favoritos img {
+    width: 120px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 4px solid #c200f8;
+    transition: 0.2s;
+    cursor: pointer;
+
+}
+
+/* efeito quando o mouse passa por cima das imagens favoritas */
+.favoritos img:houver {
+    /* aumenta um pouco e a imagem gira levemente para a esquerda */
+    transform: scale(1.1) rotate(-3deg);
+
+}
+
+/* definindo a animação "fade" usada no .card */
+@keyframes fade {
+    /* estado inicial da animação */
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
